@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Primer Estilo y un Nuevo</title>
+  <style>
+
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+      color: navy;
+      text-align: center;
+    }
+    p {
+      color: darkred;
+      font-size: 18px;
+    }
+
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #008CBA;
+      color: white;
+      font-weight: bold;
+    }
+    .nota {
+      font-weight: normal;
+      color: #008CBA;
+    }
+
+    .nuevo-primer-estilo {
+      border: 3px solid #FFD700;
+      background-color: #FFFACD;
+      padding: 20px;
+      margin: 40px auto;
+      width: 50%;
+      text-align: center;
+      color: #333;
+      border-radius: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      
+      opacity: 0;
+      transform: scale(0.8);
+      animation: aparecer 1.5s ease-out forwards;
+      transition: all 0.4s ease;
+    }
+
+    .nuevo-primer-estilo:hover {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    @keyframes aparecer {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Mi primer estilo CSS</h1>
+  <p>Este es un párrafo con mi primer diseño.</p>
+
+  <hr>
+  <h2>Análisis Estructurado del Código (Actualizado)</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Elemento</th>
+        <th>Propiedad CSS</th>
+        <th>Valor CSS</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>`<html>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Contenedor principal del documento.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`body`</td>
+        <td>`background-color`</td>
+        <td>`lightblue`</td>
+        <td>Fondo de la página azul claro. <span class="nota"></span></td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>`<h1>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Título principal. Contenido: "Mi primer estilo CSS"</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`h1`</td>
+        <td>`color`</td>
+        <td>`navy`</td>
+        <td>Color de texto azul marino.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`h1`</td>
+        <td>`text-align`</td>
+        <td>`center`</td>
+        <td>Centrado horizontal.</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>`<p>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Párrafo de texto.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`p`</td>
+        <td>`color`</td>
+        <td>`darkred`</td>
+        <td>Color de texto rojo oscuro.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`p`</td>
+        <td>`font-size`</td>
+        <td>`18px`</td>
+        <td>Tamaño de fuente de 18 píxeles.</td>
+      </tr>
+      
+      <tr>
+        <td colspan="5" style="background-color: #f0f0f0; font-weight: bold;">NUEVO ESTILO CREATIVO: .nuevo-primer-estilo (Caja "Primer Logro")</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`.nuevo-primer-estilo`</td>
+        <td>`border`, `background-color`</td>
+        <td>`3px solid #FFD700`, `#FFFACD`</td>
+        <td>Borde dorado y fondo amarillo claro para destacar el "primer" elemento.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`.nuevo-primer-estilo`</td>
+        <td>`animation`</td>
+        <td>`aparecer 1.5s ease-out forwards`</td>
+        <td>Efecto de "revelación" o "estreno" al cargar la página (opacidad y escala).</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`.nuevo-primer-estilo:hover`</td>
+        <td>`box-shadow`, `transform`</td>
+        <td>`0 0 20px rgba(255, 215, 0, 0.8)`, `scale(1.05)`</td>
+        <td>Efecto de brillo dorado al pasar el ratón (porque lo hice bien bonito).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <div class="nuevo-primer-estilo">
+    Estilo Creativo
+  </div>
+
+</body>
+</html>
